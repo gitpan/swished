@@ -55,6 +55,8 @@ or you could test the CGI or Apache::Registry installation with command like:
 the format for the text you'll see is explained in the file PROTOCOL
 and is expected to be read by SWISH::API::Remote
 
+See also 'perldoc lib/SWISHED.pm'
+
 
 COPYRIGHT AND LICENSE
 

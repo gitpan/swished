@@ -5,7 +5,7 @@ use warnings;
 
 use vars qw($VERSION); 
 # this module is used only for the VERSION line below and the perldocs
-$VERSION = '0.07';
+$VERSION = '0.08';
 
 1;
 
@@ -13,7 +13,8 @@ __END__
 
 =head1 NAME
 
-swished - a set of perl modules to provide a persistent swish-e daemon
+swished - a set of perl modules to provide a persistent swish-e daemon. 
+A reference implementation intended to be used with SWISH::API::Remote.
 
 =head1 SYNOPSIS
 
