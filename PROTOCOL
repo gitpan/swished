@@ -1,0 +1,24 @@
+# our protocol is based on the swish-e command line exe.
+# server expects a query string with the following
+
+CLIENT REQUEST: build a query string with the following
+# f=indexname
+# w=search 				(presence of this indicates a search will occur)
+# b=begin
+# p=prop,prop2,prop3 	these props (default swishdocpath,swishrank,swishtitle)
+# d=1					debug level (not implemented)
+
+
+THE SERVER WILL RETURN, IE:
+Content-type: text/html
+
+d: pid 17583 opened index /var/lib/sman/sman.index for search 'my search'
+k: 0=swishdocpath&1=swishrank&2=swishtitle
+m: hits=190
+r: 0=%2Fusr%2Fshare%2Fman%2Fman3%2FDBI.3pm&1=1000&2=DBI
+r: 0=%2Fusr%2Fshare%2Fman%2Fman3%2FClass%3A%3ADBI.3pm&1=997&2=Class%3A%3ADBI
+r: 0=%2Fusr%2Fshare%2Fman%2Fman3%2FSearch%3A%3AInvertedIndex.3pm&1=964&2=Search%3A%3AInverte
+
+THE SERVER MAY ALSO RETURN:
+d: this is a debug string
+e: This is an error string
