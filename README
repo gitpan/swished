@@ -1,4 +1,4 @@
-swished version 0.06
+swished version 0.10
 ====================
 
 INSTALLATION
@@ -17,8 +17,8 @@ This will install the module and associated files into
 	/usr/local/lib/SWISHED/Handler.pm    is the mod_perl 2.0 Apache Handler
 	/usr/local/lib/startup.pl            is the mod_perl 2.0 startup script
 
-To run as a mod_perl 2.0 module, add lines like the 
-following to your mod_perl httpd.conf file:
+** To run as a mod_perl 2.0 module, add lines like the 
+   following to your mod_perl httpd.conf file:
 
 	PerlRequire /usr/local/swished/lib/startup.pl
 	PerlPassEnv SWISHED_INDEX_DEFAULT 
@@ -31,8 +31,8 @@ following to your mod_perl httpd.conf file:
 		SetHandler perl-script
 	</Location>
 
-To run as a Apache::Registry modules, place lines like 
-the following in your httpd.conf file
+** To run as a Apache::Registry modules, place lines like 
+   the following in your httpd.conf file
 
 	Alias /swished/  /usr/local/swished/cgi-bin/
 	PassEnv SWISHED_INDEX_DEFAULT
@@ -57,10 +57,9 @@ and is expected to be read by SWISH::API::Remote
 
 See also 'perldoc lib/SWISHED.pm'
 
-
 COPYRIGHT AND LICENSE
 
-Copyright (C) 2004 by joshr
+Copyright (C) 2004-2006 by Josh Rabinowitz
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.3 or,
